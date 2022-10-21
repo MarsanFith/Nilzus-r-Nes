@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+:root {
+    --primary: linear-gradient(#43d3ff, #01205a);
+    --dark: linear-gradient(#ffffff, #8edbff);
+    --light: #fafafa;
+    --shadow: 0px 6px 9px #344f5e;
+    --lightshadow: 0px 6px 9px #449bca;
+    --textshadow: 0.5px 0.5px 0.5px #0027a7;
+    --textlightshadow: 0.5px 0.5px 0.5px #ffffff;
+}
+
+.wrapper {
+    display: grid;
+    gap: 20px;
+}
+
+.header {
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background: #fafaff;
+    margin: 30px 50px;
+    line-height: 1.4em;
+}
+
+.main-nav ul {
+    margin-top: 15px;
+    display: grid;
+    gap: 40px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+.main-nav a {
+    background: var(--primary);
+    color: #f8fbff;
+    display: block;
+    text-decoration: none;
+    padding: 0.805rem;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: var(--shadow);
+    border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+    font-size: 16.4px;
+}
+
+.main-nav a:hover {
+    color: #072d3d;
+    background: var(--dark);
+    box-shadow: var(--lightshadow);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 0.25fr 1fr;
+    grid-template-rows: 1fr 1fr 100px;
+    grid-template-areas: "main5 main1 main6 main2" "main7 main3 main8 main4" "footer footer footer footer";
+    height: 100vh;
+    gap: 8px;
+    margin: 1.5em;
+}
+
+section.header {
+    grid-area: header;
+    background: linear-gradient(to right, #7cebff, #ffb1ab);
+}
+
+section.image1 {
+    grid-area: main1;
+    background-image:url(../images/agriculture.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    box-shadow: var(--shadow);
+    border-radius: 0rem 0rem 0rem 0rem;
+}
+
+section.image2 {
+    grid-area: main2;
+    background-image:url(../images/cyanobacteria.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    box-shadow: var(--shadow);
+    border-radius: 0rem 0.25rem 0rem 0rem;
+}
+
+section.image3 {
+    grid-area: main3;
+    background-image:url(../images/sewerpipe.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    box-shadow: var(--shadow);
+    border-radius: 0rem 0rem 0rem 0rem;
+}
+
+section.image4 {
+    grid-area: main4;
+    background-image:url(../images/urban\ runoff.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    box-shadow: var(--shadow);
+    border-radius: 0rem 0rem 0rem 0rem;
+}
+
+section.main1 {
+    grid-area: main5;
+    background: linear-gradient(#4c90dd, #91caff);
+    box-shadow: var(--shadow);
+    border-radius: 0.25rem 0rem 0rem 0rem;
+}
+
+section.main2 {
+    grid-area: main6;
+    background: linear-gradient(#63cc00, #68c43d);
+    box-shadow: var(--shadow);
+    border-radius: 0rem 0rem 0rem 0rem;
+}
+
+section.main3 {
+    grid-area: main7;
+    background: linear-gradient(#f03c3c, #ff8787);
+    box-shadow: var(--shadow);
+    border-radius: 0rem 0rem 0rem 0rem;
+}
+
+section.main4 {
+    grid-area: main8;
+    background: linear-gradient(#ae3cf0, #521e7c);
+    box-shadow: var(--shadow);
+    border-radius: 0rem 0rem 0rem 0rem;
+}
+
+section.footer {
+    grid-area: footer;
+    background: linear-gradient(to right, #7d7d73, #cacac1, #7d7d75);
+    box-shadow: var(--shadow);
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+}
+
+h1 {
+    color: #20324b;
+    font-size:31px;
+}
+
+p {
+    color: #f3f3f3;
+    font-size:19px;
+    margin: 10px;
+}
+
+h2 {
+    color: #f3f3f3;
+    font-size: 21px;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+section.image1:hover {
+    box-shadow: var(--lightshadow);
+}
+
+section.image2:hover {
+    box-shadow: var(--lightshadow);
+}
+
+section.image3:hover {
+    box-shadow: var(--lightshadow);
+}
+
+section.image4:hover {
+    box-shadow: var(--lightshadow);
+}
+
+section.main1:hover {
+    background: linear-gradient(#5e8fbd, #a6cbe2);
+    box-shadow: var(--lightshadow);
+}
+
+section.main2:hover {
+    background: linear-gradient(#63964c, #539b0f);
+    box-shadow: var(--lightshadow);
+}
+
+section.main3:hover {
+    background: linear-gradient(#a05656, #bd9292);
+    box-shadow: var(--lightshadow);
+}
+
+section.main4:hover {
+    background: linear-gradient(#bea0cf, #a26bcf);
+    box-shadow: var(--lightshadow);
+}
+
+section.footer:hover {
+    background: linear-gradient(#9b9b9b, #d8d8d8, #929292);
+    box-shadow: var(--lightshadow);
+}
+
+h1:hover {
+    color:#8ec3ff;
+}
+
+p:hover {
+    color: #0043a0;
+}
+
+h2:hover {
+    color: #0043a0;
+}
